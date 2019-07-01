@@ -13,7 +13,7 @@ const useAPI = ApiResource => {
         );
         setResponse(result.data);
       } catch (err) {
-        console.log(err);
+        console.log(err.response);
       }
     })(ApiResource);
   }, [ApiResource]);
